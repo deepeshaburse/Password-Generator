@@ -84,6 +84,15 @@ function generatePassword(lower, upper, number, symbol, length) {
         }
     */
 
+    /* randomize type array - alternative
+    using Fisher-Yates Algorithm
+    for (let i = typesArr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * i);
+       
+        const temp = typesArr[i];
+        typesArr[i] = typesArr[j];
+        typesArr[j] = temp;
+    } */
     const finalPassword = generatedPassword.slice(0, length)
 
     return finalPassword
